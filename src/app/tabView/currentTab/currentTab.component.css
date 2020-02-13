@@ -1,0 +1,247 @@
+
+
+/** Top Part of Current Tab Card */
+#cardTop
+{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: block;
+}
+
+/** Card Labels */
+#cardLabels
+{
+    /** Colors */
+    color: black;
+    
+    /** Width/Height */
+    width: 45%;
+    height: 95%;
+
+    /** Alignment */
+    margin-left: 5%;
+    margin-top: 5%;
+    float: left;
+}
+
+#cardImage
+{
+    /** Width/Height */
+    width: 50%;
+    height: 100%;
+
+    /** Alignment */
+    float: left;
+    text-align: center;
+}
+
+
+#stateSeal
+{    
+    margin-top: 25%;
+    width:60%;
+    height:60%;
+}
+
+.cardIcon
+{
+    /** Width / Height */
+    width: 10%;
+    height: 100%;
+    margin-left: 5%;
+    float: left;
+}
+
+/** Style of CardView Value */
+.cardValue 
+{
+    /** Width/Height */
+    width: 10%;
+    height: 100%;
+
+    /** Alignment */
+    margin-left: 5%;
+    text-align: center; 
+}
+
+@media screen and (min-width: 601px)
+{
+    /** Current View */
+    #currentView 
+    {
+        /** Colors of Current View */
+        background-color: #9BD1F2;
+        color: black;
+        border: 1px solid black;
+    }
+
+    /** Style of City */
+    #city 
+    {
+        /** Font Style */
+        font-size: 2vw;
+    }
+
+    /** Style of Timezone */
+    #timezone 
+    {
+        /** Font Style */
+        font-size: 2vw;
+        margin-bottom: 5%;
+    }
+
+    /** Style of Timezone */
+    #temperature 
+    {
+        /** Font Style */
+        font-size: 3vw;
+        margin-bottom: 5%;
+    }
+
+    #degreeSymbol 
+    {
+        /** Alignment */
+        margin-left: 3%;
+        margin-bottom: 20%;
+
+        width: 15px;
+        height: 15px;
+    }
+
+    /** Style of Farenheit Label */
+    #farenheit 
+    {
+        /** Font Style */
+        font-size: 3vw;
+        margin-left: -5%;
+    }
+
+    #summary
+    {
+        /** Font Style */
+        font-size: 1.5vw; 
+    }
+
+    /** Style of CardView Values Section */
+    #cardValues 
+    {
+        /** Width / Height */
+        width: 100%;
+        height: 10%;
+
+        /** Font Styling */
+        font-size: 15px;
+    }
+
+    /** Style of CardView Icons */
+    .icon 
+    {
+        margin-top: 15%;
+        margin-left: 15%;
+        width: 70%;
+        height: 70%;
+    }
+
+    /** Style of Card Icons Section */
+    #cardIcons 
+    {
+        /** Width / Height */
+        width: 100%;
+        height: 15%;
+
+        display: inline-block;
+    }
+}
+  
+@media screen and (max-width: 600px) 
+{
+    /** Current View */
+    #currentView 
+    {
+        /** Colors of Current View */
+        background-color: #9BD1F2;
+        color: black;
+        border: 1px solid black;
+    }
+
+    /** Style of City */
+    #city 
+    {
+        /** Font Style */
+        font-size: 4vw;
+    }
+
+    /** Style of Timezone */
+    #timezone 
+    {
+        /** Font Style */
+        font-size: 4vw;
+        margin-bottom: 5%;
+    }
+
+    /** Style of Timezone */
+    #temperature 
+    {
+        /** Font Style */
+        font-size: 5vw;
+        margin-bottom: 5%;
+    }
+
+    #degreeSymbol 
+    {
+        /** Alignment */
+        margin-left: 3%;
+        margin-bottom: 20%;
+
+        width: 10px;
+        height: 10px;
+    }
+
+    /** Style of Farenheit Label */
+    #farenheit 
+    {
+        /** Font Style */
+        font-size: 5vw;
+        margin-left: -6%;
+    }
+
+    #summary
+    {
+        /** Font Style */
+        font-size: 4vw; 
+    }
+
+    /** Style of CardView Values Section */
+    #cardValues 
+    {
+        /** Width / Height */
+        width: 100%;
+        height: 10%;
+
+        /** Alignment */
+        margin-top: -2%;
+
+        /** Font Styling */
+        font-size: 13px;
+    }
+
+    /** Style of CardView Icons */
+    .icon 
+    {
+        margin-top: 15%;
+        margin-left: 15%;
+        width: 70%;
+        height: 70%;
+    }
+
+    /** Style of Card Icons Section */
+    #cardIcons 
+    {
+        /** Width / Height */
+        width: 100%;
+        height: 15%;
+
+        display: inline-block;
+    }
+}

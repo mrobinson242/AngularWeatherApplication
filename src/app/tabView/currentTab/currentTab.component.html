@@ -1,0 +1,48 @@
+<div class="row d-flex justify-content-center">
+    <div id="currentView" class="mt-5 m-4 col-sm-9 rounded">
+        <div id="cardTop">
+            <div id="cardLabels">
+                <div>
+                    <label id="city">{{city}}</label><br>
+                    <label id="timezone">{{timezone}}</label><br>
+                    <label id="temperature">{{temperature}}</label>
+                        <img id="degreeSymbol" src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png">
+                    <label id="farenheit">&nbsp; F</label><br>
+                    <label id="summary">{{summary}}</label>
+                </div>
+            </div>
+            <div id="cardImage">
+                <img id="stateSeal" [src]="stateSeal">
+            </div>
+        </div>
+        <div id="cardIcons">
+                <div class="cardIcon" *ngIf="humidity && (humidity != 0)">
+                    <img class="icon" data-toggle="tooltip" data-placement="top" title="Humidity" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-16-512.png">
+                </div>
+                <div class="cardIcon" *ngIf="pressure && (pressure != 0)">
+                    <img class="icon" data-toggle="tooltip" data-placement="top" title="Pressure" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-25-512.png">
+                </div>
+                <div class="cardIcon" *ngIf="windSpeed && (windSpeed != 0)">
+                    <img class="icon" data-toggle="tooltip" data-placement="top" title="Wind Speed" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-27-512.png">
+                </div>
+                <div class="cardIcon" *ngIf="visibility && (visibility != 0)">
+                    <img class="icon" data-toggle="tooltip" data-placement="top" title="Visibility" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-30-512.png">
+                </div>
+                <div class="cardIcon" *ngIf="cloudCover && (cloudCover != 0)">
+                    <img class="icon" data-toggle="tooltip" data-placement="top" title="Cloud Cover" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-28-512.png">
+                </div>
+                <div class="cardIcon" *ngIf="ozone && (ozone != 0)">
+                    <img class="icon" data-toggle="tooltip" data-placement="top" title="Ozone" src="https://cdn2.iconfinder.com/data/icons/weather-74/24/weather-24-512.png">
+                </div>
+        </div>
+        <div id="cardValues">
+            <label class="cardValue" id="humidity" *ngIf="humidity && (humidity != 0)"> {{humidity}} </label>
+            <label class="cardValue" id="pressure" *ngIf="pressure && (pressure != 0)"> {{pressure}} </label>
+            <label class="cardValue" id="windSpeed" *ngIf="windSpeed && (windSpeed != 0)"> {{windSpeed}} </label>
+            <label class="cardValue" id="visibility" *ngIf="visibility && (visibility != 0)"> {{visibility}} </label>
+            <label class="cardValue" id="cloudCover" *ngIf="cloudCover && (cloudCover != 0)"> {{cloudCover}} </label>
+            <label class="cardValue" id="ozone" *ngIf="ozone && (ozone != 0)"> {{ozone}} </label>
+        </div>
+    </div>
+</div>
+

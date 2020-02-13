@@ -1,0 +1,46 @@
+<div id="weeklyView">
+    <div id="chartDiv" class="row d-flex justify-content-center">
+        <div id="chartContainer" class="m-4" ></div>
+    </div>
+</div>
+<button type="button" id="modalButton" #modalButton class="btn btn-primary" data-toggle="modal" data-target="#myModal" (click)="callModal()"> </button>
+<div class="modal fade" #myModal id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div id="modalHeader" class="modal-header">
+            <h5 class="modal-title" id="modalTitle">{{modalDate}}</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="row m-3">
+                <div class="col-7">
+                    <label id="modalCity">{{modalCity}}</label><br>
+                    <label id="modalTemp">{{modalTemp}}</label>
+                    <img id="modalDegreeSymbol" src="https://cdn3.iconfinder.com/data/icons/virtual-notebook/16/button_shape_oval-512.png">
+                    <label id="modalFarenheit">&nbsp; F</label><br>
+                    <label id="modalSummary">{{modalSummary}}</label>
+                </div>
+                <div class="col-5">
+                    <img id="modalImg" [src]="modalImg">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="row col-sm-12 mr-3">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">{{modalPrecip}}</div>
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">{{modalChanceOfRain}}</div>
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">{{modalWindSpeed}}</div>
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">{{modalHumidity}}</div>
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6">{{modalVisibility}}</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

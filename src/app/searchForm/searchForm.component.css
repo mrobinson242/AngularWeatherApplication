@@ -1,0 +1,90 @@
+/** Main Page Div */
+#main
+{
+  background-color: #6593AD !important;
+  z-index:1000;
+  border: 1px solid;
+  background: black;
+  box-shadow: 4px 4px 2px 0px rgba(50, 50, 50, 0.75);
+}
+
+#resultsBtn.active, #favoriteBtn.active 
+{
+  background-color: #6593AD !important;
+}
+
+.btn-outline-secondary:hover
+{
+  background-color: #6593AD !important;
+}
+
+#dataView
+{
+    text-align: center;
+}
+
+#homePageHeader 
+{
+  /** Text Color */
+  color: white;
+
+  /** Font Style */
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/** City/Street Form Fields */
+#city, #street
+{
+  border: 1px solid;
+}
+
+#formLabel {
+  color: white;
+}
+
+#currentLocation {
+  color: white;
+}
+
+#clearButton, #searchButton 
+{
+  background-color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#clearButton:hover, #searchButton:hover
+{
+  background-color: white !important;
+  color: gray;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.required {
+  color: red;
+}
+
+/** Field Error Message */
+.fieldErrorMsg 
+{
+  /** Text Style */
+  color: red;
+  font-size: 17px;
+}
+
+/** Material Icons */
+.material-icons {
+  vertical-align: -6px;
+}
+
+.display-background {background-color: white;}
+
+::ng-deep .dropdown-menu { width: 95%; }
+
+::ng-deep .dropdown-menu .active  {
+  color: black;
+  text-decoration: none;
+  background-color: #F2F2F2;
+}

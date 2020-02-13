@@ -1,0 +1,19 @@
+<div id="hourlyView">
+    <div class="mt-5 col-sm-5">
+        <select class="custom-select" (change)='onOptionSelected()' name="chartOption" id="chartOption" [(ngModel)]="data.chartOption" #chartOption="ngModel">
+            <option *ngFor="let item of chartOptions">{{item}}</option>
+        </select>
+    </div>
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-11 mb-5 m-5" >
+                <canvas baseChart #baseChart="base-chart"
+                        [datasets]="barChartData"
+                        [labels]="barChartLabels"
+                        [options]="barChartOptions"
+                        [legend]="barChartLegend"
+                        [chartType]="barChartType"
+                        [colors]="chartColor">
+                </canvas>
+        </div>
+    </div>
+</div>

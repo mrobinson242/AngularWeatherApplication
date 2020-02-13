@@ -1,0 +1,38 @@
+<div id="favoriteView">
+    <div class="row d-flex justify-content-center" *ngIf="!recordsAvailable">
+        <div class="alert alert-warning mt-5 col-sm-8" role="alert">
+                No Records
+        </div>
+    </div>
+
+    <div class="row d-flex justify-content-center" *ngIf="recordsAvailable">
+        <table id="favoriteTable" class="table table-striped mt-5 mb-5">
+            <thead>
+                <tr>
+                <th class="numRow" scope="col">#</th>
+                <th class="imageRow" scope="col">Image</th>
+                <th class="cityRow" scope="col">City</th>
+                <th class="stateRow" scope="col">State</th>
+                <th class="favoriteRow" scope="col">Favorites</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let fav of favorites; index as i">
+                    <td scope="row">{{i+1}}</td>
+                    <td><img id="favImg" src={{fav.icon}}></td>
+                    <td>                    
+                        <button id="cityButton" data-toggle="tooltip" data-placement="top" (click)="handleUrl(i)" title={{fav.city}}>
+                            {{fav.city}}
+                        </button>
+                    </td>
+                    <td>{{fav.abbr}}</td>
+                    <td>              
+                        <button type="button" class="btn btn-outline" (click)="removeFavorite(fav.city, fav.state)">
+                            <i id="deleteBtn" class="material-icons">delete</i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

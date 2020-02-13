@@ -1,0 +1,97 @@
+#currentTab, #hourlyTab, #weeklyTab
+{
+    color: black;
+}
+
+#currentTab:hover, #hourlyTab:hover, #weeklyTab:hover
+{
+    color:black; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+@media screen and (min-width: 601px)
+{
+    #tweet
+    {
+        /** Width/Height */
+        height: 40px;
+        width: 40px;
+    }
+
+    #favorited
+    {
+        color:#FCD12C;
+
+        /** Width/Height */
+        height: 40px;
+        width: 40px;
+
+        /** Alignment */
+        padding-top: 10px;
+
+        /** Font Style */
+        font-size: 25px;  
+    }
+
+    #twitterBtn, #favoriteBtn
+    {
+        margin-top: -15px;
+    }
+
+    #favorite
+    {
+        /** Width/Height */
+        height: 40px;
+        width: 40px;
+
+        /** Alignment */
+        padding-top: 10px;
+
+        /** Font Style */
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) 
+{
+    #tweet
+    {
+        /** Width/Height */
+        height: 35px;
+        width: 35px;
+    }
+
+    #favorited
+    {
+        color:#FCD12C;
+
+        /** Width/Height */
+        height: 20px;
+        width: 20px;
+
+        /** Alignment */
+        padding-top: 10px;
+
+        /** Font Style */
+        font-size: 18px;  
+    }
+
+    #twitterBtn, #favoriteBtn
+    {
+        margin-top: -5px;
+    }
+
+    #favorite
+    {
+        /** Width/Height */
+        height: 20px;
+        width: 20px;
+
+        /** Alignment */
+        padding-top: 10px;
+
+        /** Font Style */
+        font-size: 18px;  
+    }
+}
